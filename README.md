@@ -9,6 +9,7 @@
   - MongoDB
   - Express
   - NPM
+  - Password Hash (bcrypt)
 ```
 
 _Modeled after 'Warbler' via Udemy: The Advanced Web Developer Bootcamp._
