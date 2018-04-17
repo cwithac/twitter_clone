@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const errorHandler = require('./handlers/error.js');
 
 const PORT = 8081;
 
@@ -15,6 +16,9 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+//Error handle middleware
+app.use(errorHandler);
 
 //Listeners
 app.listen(PORT, function() {
