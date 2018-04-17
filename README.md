@@ -10,6 +10,7 @@
   - Express
   - NPM
   - Password Hash (bcrypt)
+  - HTTPie
 ```
 
 _Modeled after 'Warbler' via Udemy: The Advanced Web Developer Bootcamp._
