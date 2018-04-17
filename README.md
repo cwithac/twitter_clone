@@ -7,6 +7,7 @@
 ```
  Technologies Used:
   - NPM
+  - Express
 ```
 
 _Modeled after 'Warbler' via Udemy: The Advanced Web Developer Bootcamp._
