@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const errorHandler = require('./handlers/error.js');
 const authRoutes = require('./routes/auth.js')
 const messagesRoutes = require('./routes/messages.js');
+const {loginRequired, ensureCorrectUser} = require("./middleware/auth.js");
 
 const PORT = 8081;
 
@@ -14,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/api/auth', authRoutes);
-app.use('/api/users/:id/messages', messagesRoutes);
+app.use('/api/users/:id/messages', loginRequired, ensureCorrectUser, messagesRoutes);
 
 //Route Failure
 app.use(function(req, res, next) {
