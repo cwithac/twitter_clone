@@ -5,7 +5,11 @@ const userSchema = new mongoose.Schema({
   email: {type: String, required: true, unique: true},
   username: {type: String, required: true, unique: true},
   password: {type: String, required: true},
-  profileImageUrl: {type: String}
+  profileImageUrl: {type: String},
+  message: [{
+    type: mongoose.Schema.Types.OjectId,
+    ref: "Message"
+  }]
 });
 
 //Password Hash Pre Save Hook
