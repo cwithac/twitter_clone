@@ -10,7 +10,8 @@ const messageSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
-  }
+  },
+  {timestamps: true;}  
 });
 
 //Pre Remove Hook (Delete the message id from the user upon message deletion)
