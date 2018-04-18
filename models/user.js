@@ -13,15 +13,15 @@ const userSchema = new mongoose.Schema({
 });
 
 //Password Hash Pre Save Hook
-userSchema.pre('save', async function(next) {
+userSchema.pre("save", async function(next) {
   try {
-    if(!this.isModified('password')) {
+    if (!this.isModified("password")) {
       return next();
     }
     let hashedPassword = await bcrypt.hash(this.password, 10);
     this.password = hashedPassword;
     return next();
-  } catch(err) {
+  } catch (err) {
     return next(err);
   }
 });

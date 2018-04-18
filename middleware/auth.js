@@ -12,7 +12,7 @@ exports.loginRequired = function(req, res, next) {
         return next({ status: 401, message: "Please Log In First" });
       }
     });
-  } catch (e) {
+  } catch (err) {
     return next({ status: 401, message: "Please Log In First" });
   }
 };
@@ -28,7 +28,7 @@ exports.ensureCorrectUser = function(req, res, next) {
         return next({ status: 401, message: "Unauthorized" });
       }
     });
-  } catch (e) {
+  } catch (err) {
     return next({ status: 401, message: "Unauthorized" });
   }
 };
