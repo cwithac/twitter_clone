@@ -3,8 +3,6 @@
 - Front End [Repo](https://github.com/cwithac/twitter_clone_FE) / Hosted
 - Back End [Repo](https://github.com/cwithac/twitter_clone) / Hosted
 
-_Hosting Status Pending_
-
 ```
  Technologies Used:
   - MongoDB
@@ -17,6 +15,14 @@ _Hosting Status Pending_
   - Bootstrap 4
 ```
 
+```
+Upcoming Features:
+ - Hosting
+ - Additional Styling
+ - Form Validation
+ - Favoriting/Retweet
+```
+
 ### Resources
 
  - [Flat UI Colors](https://flatuicolors.com/palette/au)
@@ -25,5 +31,7 @@ _Hosting Status Pending_
  - [Hero Image](https://pixabay.com/photo-2942386/)
 
  ![](https://i.imgur.com/duwgV12.png)
+
+ ![](https://i.imgur.com/ZdTKhd6.png)
 
 _Modeled after 'Warbler' via Udemy: The Advanced Web Developer Bootcamp._
